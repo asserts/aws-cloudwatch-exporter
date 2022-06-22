@@ -81,3 +81,7 @@ relabelConfigs:
     regex: (.+)
     target_label: asserts_site
     replacement: $1
+  - source_labels: [cw_namespace]
+    regex: (.+)
+    target_label: namespace
+    replacement: $1
